@@ -1,29 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="auto">
 <head>
     <meta charset="UTF-8">
-    <title>Yaroslav Oslam - Resume</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaroslav Oslam — Unity Developer CV</title>
+    <meta name="description" content="CV of Yaroslav Oslam, Unity Developer: gameplay, tools, UI, C#, and performance optimization.">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 </head>
 <body>
-    <div class="resume-container">
-        <header>
-            <h1>Yaroslav Oslam</h1>
-            <h2>Pseudonym: ggStrider</h2>
-            <p class="title">Unity Game Developer</p>
-        </header>
-        <section>
-            <h3>Experience</h3>
-            <ul>
-                <li>2.5 years Unity game development</li>
-                <li>9 months commercial experience</li>
-            </ul>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" role="banner">
+        <div class="container">
+            <div class="header-top">
+                <div class="identity" itemscope itemtype="https://schema.org/Person">
+                    <h1 class="name" itemprop="name">Yaroslav Oslam / ggStrider</h1>
+                    <p class="role" itemprop="jobTitle">Unity Developer</p>
+                    <ul class="contact-list">
+                        <li><a href="mailto:ggStrider1@gmail.com" itemprop="email">ggStrider1@gmail.com</a></li>
+                        <li><a href="tel:+380983328982" itemprop="telephone">+380 98 332 89 82</a></li>
+                        <li><a href="https://www.linkedin.com/in/yaroslav-oslam-67339a2b3" target="_blank" rel="noopener" itemprop="sameAs">LinkedIn</a></li>
+                        <li><span class="location" itemprop="address">Odesa, Ukraine</span></li>
+                    </ul>
+                </div>
+                <div class="actions">
+                    <button id="theme-toggle" class="btn btn-ghost" aria-label="Toggle dark mode">Dark</button>
+                    <a class="btn" href="#" onclick="window.print(); return false;">Download PDF</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main" class="site-main" role="main">
+        <section id="summary" class="section section-summary">
+            <div class="container">
+                <h2>Summary</h2>
+                <p>Unity Developer with 3 years' experience (9 months commercial) delivering gameplay, tools, and UI implementation. Strong in C#, Unity, building reliable systems. Comfortable owning features end‑to‑end and collaborating across art, design, and UX to ship polished experiences.</p>
+                <ul class="meta-highlights">
+                    <li>Gameplay</li>
+                    <li>UI Implementation</li>
+                    <li>Editor Tools & Pipelines</li>
+                </ul>
+            </div>
         </section>
-        <section>
-            <h3>Contact</h3>
-            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+
+        <section id="experience" class="section section-experience">
+            <div class="container">
+                <h2>Commercial Experience</h2>
+                <article class="experience-item">
+                    <div class="experience-header">
+                        <h3>Unity Programmer — Templar Order — <a href="https://store.steampowered.com/app/3166960/Armageddonica/" target="_blank" rel="noopener noreferrer">Armageddonica</a></h3>
+                        <div class="meta">
+                            <span class="date">Jan 2025 — Sep 2025</span>
+                            <span class="location">(Remote)</span>
+                        </div>
+                    </div>
+                    <ul class="bullets">
+                        <li>Maintained and improved a large Unity project, analyzing and extending existing codebases.</li>
+                        <li>Built editor tools to accelerate level design and cross‑team workflows.</li>
+                        <li>Collaborated with artists and trailer/UX teams to deliver polished features.</li>
+                        <li>Implemented gameplay, and UI improvements.</li>
+                        <li>Fixed code issues</li>
+                        <li>Refactored code to improve readability and maintainability</li>
+                        <li>Validated upgrades across Unity versions and resolved some of the compatibility issues.</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span>Unity</span><span>C#</span><span>Cinemachine</span><span>Input System</span><span>Zenject</span><span>DOTween</span><span>UniTask</span>
+                    </div>
+                </article>
+            </div>
         </section>
-    </div>
-    <script src="main.js"></script>
+
+        <section id="personal-experience" class="section section-experience">
+            <div class="container">
+                <h2>Personal Experience</h2>
+                <article class="experience-item">
+                    <div class="experience-header">
+                        <h3>Personal Projects — Indie</h3>
+                        <div class="meta">
+                            <span class="date">2022 — NOW</span>
+                            <span class="location"></span>
+                        </div>
+                    </div>
+                    <ul class="bullets">
+                        <li>Developed gameplay systems, prototypes, and editor tools in Unity.</li>
+                        <li>Built UI, animations, and integrations with input, camera, and Timeline.</li>
+                        <li>Optimized performance: profiling, reducing GC, object pooling.</li>
+                        <li>Participated in small jams/collabs: fast iterations and polish.</li>
+                    </ul>
+                    <p>I built the technical side of most projects from scratch. Interpressure was co-developed with one programmer (game jam). Base locations were sometimes created by a teammate; I finished the game and added additional locations.</p>
+                    <h4>Projects</h4>
+                    <ul class="bullets">
+                        <li>
+                            <iframe frameborder="0" src="https://itch.io/embed/3273613?bg_color=000000&amp;fg_color=fb922b&amp;border_color=2c2c2c" width="552" height="167"><a href="https://ggstrider.itch.io/interpressure">Interpressure by ggStrider</a></iframe>
+                            <div class="meta">Game jam; technical work co-developed with 1 programmer.</div>
+                        </li>
+                        <li>
+                            <iframe frameborder="0" src="https://itch.io/embed/3871396?bg_color=000000&amp;fg_color=ff850d&amp;border_color=2e2e2e" width="552" height="167"><a href="https://thenexystudio.itch.io/locked-in-nonsense">Locked in Nonsense by Thenexy Studio</a></iframe>
+                            <div class="meta">Game made in 6 days; Technical work — solo.
+                            <a href="https://github.com/ggStrider/kenr862_visible" target="_blank" rel="noopener noreferrer">GitHub Code</a>
+                            </div>
+                        </li>
+                        <li>
+                            <iframe frameborder="0" src="https://itch.io/embed/3365266?bg_color=000000&amp;fg_color=fb922b&amp;border_color=2f2f2f" width="552" height="167"><a href="https://thenexystudio.itch.io/hermit-night">Hermit Night by Thenexy Studio</a></iframe>
+                            <div class="meta">Technical work — solo.</div>
+                        </li>
+                        <li>
+                            <a href="https://github.com/ggStrider/shootemup-64" target="_blank" rel="noopener noreferrer">shootemup-64</a> — Unity shmup prototype (open-source).
+                            <video src="shootemup_demo.mp4" controls preload="metadata" width="552" height="310" style="max-width:100%;height:auto;display:block;margin:8px 0;">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="meta">All project work — solo</div>
+                        </li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span>Unity</span><span>C#</span><span>DOTween</span><span>Zenject</span><span>UniTask</span><span>Cinemachine</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="section section-skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div>
+                        <h3>Core</h3>
+                        <div class="chips">
+                            <span>Unity</span><span>C#</span><span>Gameplay</span><span>Tools</span><span>UI Implementation</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Frameworks & Tools</h3>
+                        <div class="chips">
+                            <span>Zenject</span><span>DOTween</span><span>UniTask</span><span>Primetween</span><span>Rewired Input</span><span>Quest Machine</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Systems</h3>
+                        <div class="chips">
+                            <span>Cinemachine</span><span>Input System</span><span>Timeline</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section section-education">
+            <div class="container">
+                <h2>Education</h2>
+                <article>
+                    <h3>Computer Science</h3>
+                    <p>State University of Intelligent Technologies and Telecommunications, Odesa, Ukraine 2024 — 2028</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Yaroslav Oslam / ggStrider</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">▲</button>
+
+    <script src="scripts/main.js"></script>
 </body>
 </html>
