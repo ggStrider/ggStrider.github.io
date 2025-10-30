@@ -49,27 +49,110 @@
         <section id="experience" class="section section-experience">
             <div class="container">
                 <h2>Commercial Experience</h2>
-                <article class="experience-item">
-                    <div class="experience-header">
-                        <h3>Unity Programmer — Templar Order — <a href="https://store.steampowered.com/app/3166960/Armageddonica/" target="_blank" rel="noopener noreferrer">Armageddonica</a></h3>
-                        <div class="meta">
-                            <span class="date">Feb 2025 — Sep 2025</span>
-                            <span class="location">(Remote)</span>
-                        </div>
-                    </div>
-                    <ul class="bullets">
-                        <li>Maintained and improved a large Unity project, analyzing and extending existing codebases.</li>
-                        <li>Built editor tools to accelerate level design and cross‑team workflows.</li>
-                        <li>Collaborated with artists and trailer/UX teams to deliver polished features.</li>
-                        <li>Implemented gameplay, and UI improvements.</li>
-                        <li>Fixed code issues</li>
-                        <li>Refactored code to improve readability and maintainability</li>
-                        <li>Validated upgrades across Unity versions and resolved some of the compatibility issues.</li>
-                    </ul>
-                    <div class="tech-tags">
-                        <span>Unity</span><span>C#</span><span>Cinemachine</span><span>Input System</span><span>Zenject</span><span>DOTween</span><span>UniTask</span>
-                    </div>
-                </article>
+<article class="experience-item">
+    <div class="experience-header">
+        <h3>
+            Unity Programmer — Templar Order — 
+            <a href="https://store.steampowered.com/app/3166960/Armageddonica/" target="_blank" rel="noopener noreferrer">Armageddonica</a>
+        </h3>
+        <div class="meta">
+            <span class="date">Feb 2025 — Sep 2025</span>
+            <span class="location">(Remote)</span>
+        </div>
+    </div>
+    <ul class="bullets">
+        <li>Maintained and improved a large Unity project, analyzing and extending existing codebases.</li>
+        <li>Built editor tools to accelerate level design and cross-team workflows.</li>
+        <li>Collaborated with artists and trailer/UX teams to deliver polished features.</li>
+        <li>Implemented gameplay, and UI improvements.</li>
+        <li>Fixed code issues and refactored for maintainability.</li>
+        <li>Validated upgrades across Unity versions.</li>
+    </ul>
+    <button class="toggle-details" onclick="toggleDetails(this)">Show more ▼</button>
+
+    <div class="details" style="display: none;">
+        <p><strong>Detailed Work:</strong></p>
+         <p>
+        Closely collaborated with artists: developed and extended tools to make their workflow smoother.
+        One of the best examples is Prefab Brush+ — a tool that allows artists to manually scatter multiple prefabs.
+        It was initially downloaded from the Asset Store, and later I was assigned to improve it.
+        I expanded its functionality — for example, added a system that re-draws prefabs inside the paint area to prevent too many overlapping objects.
+        I also simplified its UI and added preset icons, so artists could quickly switch between drawing trees, rocks, etc.
+        Later, I even made a simplified version of this tool specifically for level designers, including only the features they actually needed.
+    </p>
+    <p>
+        From smaller utilities, I also made:
+    </p>
+    <ul>
+        <li>a screenshot tool with custom resolution support,</li>
+        <li>a “remove null prefabs” utility,</li>
+        <li>and a prefab replacement tool (replace prefab A with prefab B across the scene).</li>
+    </ul>
+    <p>
+        As the project grew, I sometimes built game-specific editor tools to help level and game designers avoid technical setup.
+        For instance, I made a visual feature for cloud shadows using Light Cookies.
+        Normally, setting this up required several steps — so I created an editor window “facade” with one-click buttons like “Add Sky Shadow” and “Remove Sky Shadow,”
+        which appear dynamically depending on whether a shadow currently exists.
+    </p>
+    <p>
+        During development, I also created an alternative map renderer.
+        The game had a minimap that displayed the world as a 2D texture, and I was tasked with generating a minimalist version using a few tones,
+        where walkable zones were dynamically detected and drawn pixel by pixel.
+        Again — I built an editor tool for this, so designers could just press a few buttons without worrying about technical details.
+        It even handled common errors, e.g. showing a message if the map component was missing.
+    </p>
+    <p>
+        When I say “closely worked with artists”, I don’t mean making art with them — I mean helping them solve technical Unity and project issues they couldn’t handle on their own.
+        For example: fixing Git merge conflicts, solving issues like “why are shadows not showing in my scene,” or “why can’t I select terrain.”
+        There were lots of such cases — these are just a few examples. I was even paid extra for this, since it was an additional responsibility.
+    </p>
+    <p>
+        I also fixed existing scripts that didn’t behave as expected or added new features into someone else’s code.
+        Sometimes I proposed and implemented my own UI improvements (after getting approval).
+        For example, we didn’t have a loading screen when changing scenes — it looked like the game froze.
+        I asked if it’d be OK to implement one, got the green light, and built it with random background images, random gameplay tips, and smooth fade-in/out animations.
+    </p>
+    <p>
+        I also worked on making the UI more responsive — button hover/press animations, sound feedback, etc.
+        When adding these features, I often had to work within the existing codebase.
+        I also love organizing data into ScriptableObjects when it makes sense — so that anyone can tweak values easily, and the changes propagate automatically to all references.
+    </p>
+    <p>
+        I also had to solve various project-wide technical challenges.
+        For example, our level designers wanted all Terrains to share the same type of grass easily.
+        To make this possible, I worked directly with Terrain components and created a Terrain-specific tool that simplified grass management.
+        All grass data was stored in a ScriptableObject, and through a few buttons in the tool, designers could quickly add grass to a terrain, save or load grass presets,
+        and synchronize grass settings between a terrain and its preset.
+    </p>
+    <p>
+        When we started working on the game trailer, I also collaborated with the video production team — adding or fixing certain functionalities.
+        For example:
+    </p>
+    <ul>
+        <li>fixed the Free Camera, which initially didn’t work,</li>
+        <li>added smooth and instant zoom options,</li>
+        <li>and implemented smooth camera follow on the player, triggered by a key press.</li>
+    </ul>
+    <p>
+        I also made use of the existing assets in our project, such as Zenject and DOTween, and got comfortable working with new ones like Rewired Input (for key binding) and Quest Manager (where I added custom quest logic).
+    </p>
+    <p>
+        Sometimes new UI ideas would come up during development — I integrated them and linked new elements with the existing systems.
+        I also built a tool that automatically converts Text components to TextMeshPro, while preserving all the text settings.
+    </p>
+    <p>
+        When the team decided to migrate to Unity 6, I was assigned as the “test pilot” to check whether the project would stay stable — including running in-game FPS and performance tests.
+    </p>
+    <p>
+        Lastly, I was never silent about new gameplay or UX ideas. If I had a suggestion that could improve the feel or flow of the game, I shared it — but I was also respectful and didn’t insist when the team decided it wasn’t necessary.
+    </p>
+    </div>
+
+    <div class="tech-tags">
+        <span>Unity</span><span>C#</span><span>Cinemachine</span><span>Input System</span><span>Zenject</span><span>DOTween</span><span>UniTask</span>
+    </div>
+</article>
+
             </div>
         </section>
 

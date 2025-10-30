@@ -72,3 +72,11 @@
     const el = document.getElementById('year');
     if (el) el.textContent = String(new Date().getFullYear());
 })();
+
+function toggleDetails(button) {
+    const details = button.nextElementSibling;
+    const isVisible = details.style.display === "block";
+
+    details.style.display = isVisible ? "none" : "block";
+    button.textContent = isVisible ? "Show more ▼" : "Show less ▲";
+}

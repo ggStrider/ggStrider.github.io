@@ -220,3 +220,30 @@ a:hover { text-decoration: underline; }
     a { color: #000000; text-decoration: none; }
     .section-experience .experience-item { box-shadow: none; border-color: #ddd; }
 }
+
+.toggle-details {
+    display: inline-block;
+    background-color: var(--surface); 
+    color: var(--accent);
+    font-weight: 600;
+    padding: 8px 16px;
+    border: 1px solid var(--chip-border); 
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 12px;
+    font-size: 0.95rem;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.4);
+}
+
+.toggle-details:hover {
+    background-color: var(--elev); 
+    color: var(--link); 
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+}
+
+.toggle-details:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}
