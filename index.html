@@ -1,261 +1,78 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="auto">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yaroslav Oslam — Unity Developer CV</title>
-    <meta name="description" content="CV of Yaroslav Oslam, Unity Developer: gameplay, tools, UI, C#, and performance optimization.">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yaroslav Oslam — Unity Developer Portfolio</title>
+<meta name="description" content="Unity developer portfolio — Armageddonica (Steam), Thrones of Ashes, Hermit Night, and a long list of solo horror, arcade, and multiplayer projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="site-header" role="banner">
-        <div class="container">
-            <div class="header-top">
-                <div class="identity" itemscope itemtype="https://schema.org/Person">
-                    <h1 class="name" itemprop="name">Yaroslav Oslam / ggStrider</h1>
-                    <p class="role" itemprop="jobTitle">Unity Developer</p>
-                    <ul class="contact-list">
-                        <li><a href="mailto:ggStrider1@gmail.com" itemprop="email">ggStrider1@gmail.com</a></li>
-                        <li><a href="https://t.me/ggStrider" target="_blank" rel="noopener" itemprop="sameAs">Telegram</a></li>
-                        <li><a href="https://www.linkedin.com/in/yaroslav-oslam-67339a2b3" target="_blank" rel="noopener" itemprop="sameAs">LinkedIn</a></li>
-                        <li><a href="https://github.com/ggStrider" target="_blank" rel="noopener" itemprop="sameAs">GitHub</a></li>
-                        <li><span class="location" itemprop="address">Odesa, Ukraine</span></li>
-                    </ul>
-                </div>
-                <div class="actions">
-                    <button id="theme-toggle" class="btn btn-ghost" aria-label="Toggle dark mode">Dark</button>
-                    <a class="btn" href="#" onclick="window.print(); return false;">Download PDF</a>
-                </div>
-            </div>
+  <nav class="topnav">
+    <div class="wrap">
+      <a class="brand" href="#/">Yaroslav<span>.</span>dev</a>
+      <div class="navlinks">
+        <a href="https://github.com/ggStrider" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/yaroslav-oslam-67339a2b3/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:ggStrider1@gmail.com">Email</a>
+        <a class="pill-link primary nav-cv" href="assets/resume/Yaroslav_Oslam_Resume.pdf" download>Download Resume</a>
+      </div>
+    </div>
+  </nav>
+
+  <div id="homeView" class="home-view">
+    <header class="hero">
+      <div class="wrap">
+        <div class="hud-row eyebrow">
+          <span><b>13</b> projects shipped &amp; prototyped</span><span class="dot">&middot;</span>
+          <span>Unity <b>3+ yrs</b></span><span class="dot">&middot;</span>
+          <span>Team sizes <b>1 &ndash; 11</b></span>
         </div>
+        <h1>Every one of these games starts with something small trying to survive the dark.</h1>
+        <p class="lede">Unity developer working across gameplay, tools, and the occasional custom netcode stack. This is the full run — one shipped Steam title, one unreleased RPG I ended up carrying solo, and a long trail of solo horror, arcade, and prototype builds.</p>
+        <div class="hero-links">
+          <a class="pill-link primary" href="#/game/armageddonica">Start with Armageddonica &rarr;</a>
+          <a class="pill-link" href="assets/resume/Yaroslav_Oslam_Resume.pdf" download>Download Resume &darr;</a>
+          <a class="pill-link" href="mailto:ggStrider1@gmail.com">Get in touch</a>
+        </div>
+      </div>
     </header>
 
-    <main id="main" class="site-main" role="main">
-        <section id="summary" class="section section-summary">
-            <div class="container">
-                <h2>Summary</h2>
-                <p>Unity Developer with 3 years' experience (9 months commercial) delivering gameplay, tools, and UI implementation. Strong in C#, Unity, building reliable systems. Comfortable owning features end‑to‑end and collaborating across art, design, and UX to ship polished experiences.</p>
-                <ul class="meta-highlights">
-                    
-                </ul>
-            </div>
-        </section>
-
-        <section id="experience" class="section section-experience">
-            <div class="container">
-                <h2>Commercial Experience</h2>
-<article class="experience-item">
-    <div class="experience-header">
-        <h3>
-            Unity Programmer — Templar Order — 
-            <a href="https://store.steampowered.com/app/3166960/Armageddonica/" target="_blank" rel="noopener noreferrer">Armageddonica</a>
-        </h3>
-        <div class="meta">
-            <span class="date">Feb 2025 — Sep 2025</span>
-            <span class="location">(Remote)</span>
-        </div>
+    <div class="wrap">
+      <div class="section-head">
+        <h2>All projects</h2>
+        <span class="count">Click any card for the full breakdown</span>
+      </div>
+      <div class="grid" id="grid"></div>
     </div>
-    <ul class="bullets">
-        <li>Maintained and improved a large Unity project, analyzing and extending existing codebases.</li>
-        <li>Built editor tools to accelerate level design and cross-team workflows.</li>
-        <li>Collaborated with artists and trailer/UX teams to deliver polished features.</li>
-        <li>Implemented gameplay, and UI improvements.</li>
-        <li>Fixed code issues and refactored for maintainability.</li>
-        <li>Validated upgrades across Unity versions.</li>
-    </ul>
-    <button class="toggle-details" onclick="toggleDetails(this)">Show more ▼</button>
+  </div>
 
-    <div class="details" style="display: none;">
-        <p><strong>Detailed Work:</strong></p>
-         <p>
-        Closely collaborated with artists: developed and extended tools to make their workflow smoother.
-        One of the best examples is Prefab Brush+ — a tool that allows artists to manually scatter multiple prefabs.
-        It was initially downloaded from the Asset Store, and later I was assigned to improve it.
-        I expanded its functionality — for example, added a system that re-draws prefabs inside the paint area to prevent too many overlapping objects.
-        I also simplified its UI and added preset icons, so artists could quickly switch between drawing trees, rocks, etc.
-        Later, I even made a simplified version of this tool specifically for level designers, including only the features they actually needed.
-    </p>
-    <p>
-        From smaller utilities, I also made:
-    </p>
-    <ul>
-        <li>a screenshot tool with custom resolution support,</li>
-        <li>a “remove null prefabs” utility,</li>
-        <li>and a prefab replacement tool (replace prefab A with prefab B across the scene).</li>
-    </ul>
-    <p>
-        As the project grew, I sometimes built game-specific editor tools to help level and game designers avoid technical setup.
-        For instance, I made a visual feature for cloud shadows using Light Cookies.
-        Normally, setting this up required several steps — so I created an editor window “facade” with one-click buttons like “Add Sky Shadow” and “Remove Sky Shadow,”
-        which appear dynamically depending on whether a shadow currently exists.
-    </p>
-    <p>
-        During development, I also created an alternative map renderer.
-        The game had a minimap that displayed the world as a 2D texture, and I was tasked with generating a minimalist version using a few tones,
-        where walkable zones were dynamically detected and drawn pixel by pixel.
-        Again — I built an editor tool for this, so designers could just press a few buttons without worrying about technical details.
-        It even handled common errors, e.g. showing a message if the map component was missing.
-    </p>
-    <p>
-        When I say “closely worked with artists”, I don’t mean making art with them — I mean helping them solve technical Unity and project issues they couldn’t handle on their own.
-        For example: fixing Git merge conflicts, solving issues like “why are shadows not showing in my scene,” or “why can’t I select terrain.”
-        There were lots of such cases — these are just a few examples. I was even paid extra for this, since it was an additional responsibility.
-    </p>
-    <p>
-        I also fixed existing scripts that didn’t behave as expected or added new features into someone else’s code.
-        Sometimes I proposed and implemented my own UI improvements (after getting approval).
-        For example, we didn’t have a loading screen when changing scenes — it looked like the game froze.
-        I asked if it’d be OK to implement one, got the green light, and built it with random background images, random gameplay tips, and smooth fade-in/out animations.
-    </p>
-    <p>
-        I also worked on making the UI more responsive — button hover/press animations, sound feedback, etc.
-        When adding these features, I often had to work within the existing codebase.
-        I also love organizing data into ScriptableObjects when it makes sense — so that anyone can tweak values easily, and the changes propagate automatically to all references.
-    </p>
-    <p>
-        I also had to solve various project-wide technical challenges.
-        For example, our level designers wanted all Terrains to share the same type of grass easily.
-        To make this possible, I worked directly with Terrain components and created a Terrain-specific tool that simplified grass management.
-        All grass data was stored in a ScriptableObject, and through a few buttons in the tool, designers could quickly add grass to a terrain, save or load grass presets,
-        and synchronize grass settings between a terrain and its preset.
-    </p>
-    <p>
-        When we started working on the game trailer, I also collaborated with the video production team — adding or fixing certain functionalities.
-        For example:
-    </p>
-    <ul>
-        <li>fixed the Free Camera, which initially didn’t work,</li>
-        <li>added smooth and instant zoom options,</li>
-        <li>and implemented smooth camera follow on the player, triggered by a key press.</li>
-    </ul>
-    <p>
-        I also made use of the existing assets in our project, such as Zenject and DOTween, and got comfortable working with new ones like Rewired Input (for key binding) and Quest Manager (where I added custom quest logic).
-    </p>
-    <p>
-        Sometimes new UI ideas would come up during development — I integrated them and linked new elements with the existing systems.
-        I also built a tool that automatically converts Text components to TextMeshPro, while preserving all the text settings.
-    </p>
-    <p>
-        When the team decided to migrate to Unity 6, I was assigned as the “test pilot” to check whether the project would stay stable — including running in-game FPS and performance tests.
-    </p>
-    <p>
-        Lastly, I was never silent about new gameplay or UX ideas. If I had a suggestion that could improve the feel or flow of the game, I shared it — but I was also respectful and didn’t insist when the team decided it wasn’t necessary.
-    </p>
+  <div id="detail" class="detail"></div>
+
+  <footer>
+    <div class="wrap">
+      <span class="copy">Yaroslav Oslam &mdash; Unity Developer</span>
+      <div class="foot-links">
+        <a href="https://github.com/ggStrider" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/yaroslav-oslam-67339a2b3/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://t.me/ggStrider" target="_blank" rel="noopener">Telegram</a>
+        <a href="mailto:ggStrider1@gmail.com">Email</a>
+      </div>
     </div>
+  </footer>
 
-    <div class="tech-tags">
-        <span>Unity</span><span>C#</span><span>Cinemachine</span><span>Input System</span><span>Zenject</span><span>DOTween</span><span>UniTask</span>
-    </div>
-</article>
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">Close &times;</button>
+    <button class="lightbox-nav prev" id="lightboxPrev">&#8592;</button>
+    <div id="lightboxContent"></div>
+    <button class="lightbox-nav next" id="lightboxNext">&#8594;</button>
+  </div>
 
-            </div>
-        </section>
-
-        <section id="personal-experience" class="section section-experience">
-            <div class="container">
-                <h2>Personal Experience</h2>
-                <article class="experience-item">
-                    <div class="experience-header">
-                        <h3>Personal Projects — Indie</h3>
-                        <div class="meta">
-                            <span class="date">2022 — NOW</span>
-                            <span class="location"></span>
-                        </div>
-                    </div>
-                    <ul class="bullets">
-                        <li>I usually work on my personal projects either alone or with the help of a friend who does level design (and searches for/develops assets). So if you look at any of my personal projects, almost everything was done by me.</li>
-                    </ul>
-                    <h4>Projects</h4>
-                    <ul class="bullets">
-                        <li>
-                            <iframe frameborder="0" src="https://itch.io/embed/3273613?bg_color=000000&amp;fg_color=fb922b&amp;border_color=2c2c2c" width="552" height="167"><a href="https://ggstrider.itch.io/interpressure">Interpressure by ggStrider</a></iframe>
-                            <div class="meta">Game jam; technical work co-developed with 1 programmer.</div>
-                        </li>
-                        <li>
-                            <iframe frameborder="0" src="https://itch.io/embed/3871396?bg_color=000000&amp;fg_color=ff850d&amp;border_color=2e2e2e" width="552" height="167"><a href="https://thenexystudio.itch.io/locked-in-nonsense">Locked in Nonsense by Thenexy Studio</a></iframe>
-                            <div class="meta">Game made in 6 days; Technical work — solo.
-                            <a href="https://github.com/ggStrider/kenr862_visible" target="_blank" rel="noopener noreferrer">GitHub Code</a>
-                            </div>
-                        </li>
-                        <li>
-                            <iframe frameborder="0" src="https://itch.io/embed/3365266?bg_color=000000&amp;fg_color=fb922b&amp;border_color=2f2f2f" width="552" height="167"><a href="https://thenexystudio.itch.io/hermit-night">Hermit Night by Thenexy Studio</a></iframe>
-                            <div class="meta">Technical work — solo.</div>
-                        </li>
-                        <li>
-                            <iframe frameborder="0" src="https://itch.io/embed/4436156?bg_color=000000&amp;fg_color=FB922B&amp;border_color=292929" width="552" height="167"><a href="https://thenexystudio.itch.io/hermit-night-2">Hermit Night 2 by Thenexy Studio</a></iframe>F
-                            <div class="meta">All project work (code, cutscenes, level design, etc) — solo.</div>
-                        </li>
-
-                        <li>
-                            <a href="https://github.com/ggStrider/shootemup-64" target="_blank" rel="noopener noreferrer">shootemup-64</a> — Rhythm arcade action game (GitHub repository, good code).
-                            <video src="shootemup_demo.mp4" controls preload="metadata" width="552" height="310" style="max-width:100%;height:auto;display:block;margin:8px 0;">
-                                Your browser does not support the video tag.
-                            </video>
-                            <div class="meta">All project work — solo</div>
-                        </li>
-                    </ul>
-                    <div class="tech-tags">
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section id="skills" class="section section-skills">
-            <div class="container">
-                <h2>Skills</h2>
-                <div class="skills-grid">
-                    <div>
-                        <h3>Core</h3>
-                        <div class="chips">
-                            <span>Unity</span><span>Unity 2D</span><span>C#</span><span>Gameplay</span><span>UI Implementation</span><span>Git</span><span>Unit Tests</span><span>GitHub</span><span>GitLab</span>
-                        </div>
-                    </div>
-                    <div>
-                        <h3>Frameworks & Tools</h3>
-                        <div class="chips">
-                            <span>Zenject</span><span>SignalBus</span><span>DOTween</span><span>Primetween</span><span>UniTask</span><span>NaughtyAttributes</span><span>OdinInspector (my love)</span><span>JSON Save/Load</span><span>Dialogue System (pixel crushers)</span><span>Quest System (pixel crushers)</span>
-                        </div>
-                    </div>
-                    <div>
-                        <h3>Architecture & Patterns</h3>
-                        <div class="chips">
-                            <span>Event‑Driven</span><span>Dependency Injection</span><span>ScriptableObject</span><span>Object Pooling</span><span>Reactive</span>
-                        </div>
-                    </div>
-                    <div>
-                        <h3>Systems</h3>
-                        <div class="chips">
-                            <span>Cinemachine</span><span>Input System</span><span>Timeline (Cutscenes)</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="education" class="section section-education">
-            <div class="container">
-                <h2>Education</h2>
-                <article>
-                    <h3>Computer Science</h3>
-                    <p>State University of Intelligent Technologies and Telecommunications, Odesa, Ukraine 2024 — 2028</p>
-                </article>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer" role="contentinfo">
-        <div class="container">
-            <p>&copy; <span id="year"></span> Yaroslav Oslam / ggStrider</p>
-        </div>
-    </footer>
-
-    <button id="back-to-top" class="back-to-top" aria-label="Back to top">▲</button>
-
-    <script src="scripts/main.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
